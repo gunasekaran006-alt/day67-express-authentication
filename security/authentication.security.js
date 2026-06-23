@@ -11,7 +11,9 @@ const registerApi = (req, res) => {
     }
 
     // 4 digit opt login pin
-    const loginPin = Math.floor(1000 + Math.random() * 9999);
+    // const loginPin = Math.floor(1000 + Math.random() * 9999);
+        const loginPin = Math.floor(1000 + Math.random() * 9000);
+
 
     const newUser = {
         id: Date.now().toString(),
